@@ -14,7 +14,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.divinespear</groupId>
 	<artifactId>jpa-schema-maven-plugin</artifactId>
-	<version>0.2.2-SNAPSHOT</version>
+	<version>0.2.3-SNAPSHOT</version>
 	<packaging>maven-plugin</packaging>
 
 	<parent>
@@ -77,12 +77,12 @@
 	<properties>
 		<github.global.server>github</github.global.server>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.7</maven.compiler.source>
-		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 		<!-- versions -->
 		<maven.version>3.3.1</maven.version>
 		<maven-plugin-tools.version>3.4</maven-plugin-tools.version>
-		<eclipselink.version>2.6.3</eclipselink.version>
+		<eclipselink.version>2.6.4</eclipselink.version>
 		<hibernate.version>5.0.7.Final</hibernate.version>
 		<datanucleus.version>4.2.3</datanucleus.version>
 		<spring-data-jpa.version>1.9.2.RELEASE</spring-data-jpa.version>
@@ -141,7 +141,6 @@
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>org.eclipse.persistence.jpa</artifactId>
 			<version>${eclipselink.version}</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
@@ -153,7 +152,6 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate.version}</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.datanucleus</groupId>
