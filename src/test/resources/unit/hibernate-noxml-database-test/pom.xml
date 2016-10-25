@@ -50,9 +50,13 @@
 				<artifactId>jpa-schema-maven-plugin</artifactId>
 				<version>${plugin.version}</version>
 				<configuration>
+					<vendor>hibernate</vendor>
+					<packageToScan>
+						<string>io.github.divinespear</string>
+					</packageToScan>
 					<databaseAction>drop-and-create</databaseAction>
 					<jdbcDriver>org.h2.Driver</jdbcDriver>
-					<jdbcUrl>jdbc:h2:nio:${basedir}/target/test-classes/unit/hibernate-simple-database-test/target/test</jdbcUrl>
+					<jdbcUrl>jdbc:h2:nio:${basedir}/target/test-classes/unit/hibernate-noxml-database-test/target/test</jdbcUrl>
 					<jdbcUser>sa</jdbcUser>
 				</configuration>
 			</plugin>
